@@ -81,5 +81,5 @@ Num of Blocks: 0
    156053.913393 seconds
 3) Copy a file from HDFS to local file system.\
    096.683305 seconds
-4) Copy a file from HDFS to HDFS.
+4) Copy a file from HDFS to HDFS.\
    156142.732470 seconds
