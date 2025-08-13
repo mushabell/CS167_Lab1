@@ -65,7 +65,7 @@ Num of Blocks: 0
   Input file 'DFS[DFSClient[clientName=DFSClient_NONMAPREDUCE_-1793876227_1, ugi=cs167 (auth:SIMPLE)]]' does not exist!
 
 * (Q5) Verify the copied file (`copy.csv`) size and report the running time.\
-  The file size was 2271210910 bytes and it took 155851.822211 seconds to run the program.
+  The file size was 2271210910 bytes and it took 8.872621 seconds to run the program.
 
 * (Q6) Report the running time of the cp command.\
   The time of the cp command is:\
@@ -78,8 +78,8 @@ Num of Blocks: 0
 
 * (Q8) Use your program to test the following cases and report the running time for each case.
 1) Copy a file from local file system to HDFS.\
-   156053.913393 seconds
+   11.6574138 seconds
 3) Copy a file from HDFS to local file system.\
-   096.683305 seconds
+   13.2328255 seconds
 4) Copy a file from HDFS to HDFS.\
-   156142.732470 seconds
+   10.1259737 seconds
