@@ -18,8 +18,8 @@
 
 
 
-3. ***(Q3) How many live datanodes are in this cluster?***
-
+3. ***(Q3) How many live datanodes are in this cluster?***\
+There are 5 live datanodes in this cluster.
 
 
 4. ***(Q4) How many replicas are stored on the namenode? How many replicas are stored in the datanodes?***
