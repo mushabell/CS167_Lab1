@@ -13,7 +13,7 @@
 
 
 
-2. ***(Q2) Copy the output of this command.***
+2. ***(Q2) Copy the output of this command.***\
 Configured Capacity: 831719669760 (774.60 GB)
 Present Capacity: 576088977408 (536.52 GB)
 DFS Remaining: 576088850432 (536.52 GB)
@@ -120,7 +120,7 @@ Num of Blocks: 0
 There are 5 live datanodes in this cluster.
 
 
-4. ***(Q4) How many replicas are stored on the namenode? How many replicas are stored in the datanodes?***
+4. ***(Q4) How many replicas are stored on the namenode? How many replicas are stored in the datanodes?***\
 There are 0 replicas stored on the namenode. There are 0 replicas stroed in the datanodes. 
 
 
