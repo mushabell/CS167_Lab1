@@ -125,7 +125,7 @@ There are 0 replicas stored on the namenode. There are 0 replicas stroed in the 
 
 
 5. ***(Q5) How many replicas are stored on the datanode uploading the file? How many replicas are stored across other datanodes?***\
-There are 17 replicas that are stroed on my datanode after uploading the file. There are ___ replicas stored across the other datanodes. 
+There are 2 replicas that are stored on my datanode after uploading the file. There is one replica of the files in the namenode.  
 
 
 
@@ -138,6 +138,6 @@ In question 4 there were no files uploaded so there was no copies of any files t
 
   | offset | length | bytesRead  | numMatchingLines |
   | ------ | ------ | ---------- | ---------------- |
-  | 500    | 1000   |            |                  |
-  | 12000  | 1000   |            |                  |
-  | 100095 | 1000   |            |                  |
+  | 500    | 1000   |    1073    |        8         |
+  | 12000  | 1000   |    1063    |        8         |
+  | 100095 | 1000   |    1079    |        12        |
