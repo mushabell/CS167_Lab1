@@ -139,5 +139,5 @@ In question 4 there were no files uploaded so there was no copies of any files t
   | offset | length | bytesRead  | numMatchingLines |
   | ------ | ------ | ---------- | ---------------- |
   | 500    | 1000   |    1073    |        8         |
-  | 12000  | 1000   |    1063    |        8         |
-  | 100095 | 1000   |    1079    |        12        |
+  | 12000  | 1000   |    1063    |        7         |
+  | 100095 | 1000   |    1079    |        11        |
