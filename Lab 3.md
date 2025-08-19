@@ -124,13 +124,13 @@ There are 5 live datanodes in this cluster.
 There are 0 replicas stored on the namenode. There are 0 replicas stroed in the datanodes. 
 
 
-5. ***(Q5) How many replicas are stored on the datanode uploading the file? How many replicas are stored across other datanodes?***
+5. ***(Q5) How many replicas are stored on the datanode uploading the file? How many replicas are stored across other datanodes?***\
+There are 17 replicas that are stroed on my datanode after uploading the file. There are ___ replicas stored across the other datanodes. 
 
 
 
-
-6. ***(Q6) Compare your results of Q4 and Q5, give one sentence to explain the results you obtained.***
-
+6. ***(Q6) Compare your results of Q4 and Q5, give one sentence to explain the results you obtained.***\
+In question 4 there were no files uploaded so there was no copies of any files that were cerated. In question 5, each datanode uploaded a file and had a repliaction factor of 3 which created a total of ___ replicas overall with ___ in the namenode and ___ in the datanodes. 
 
 
 7. ***(Q7) Include the output of the three cases above in your README file.***
