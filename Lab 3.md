@@ -14,6 +14,24 @@
 
 
 2. ***(Q2) Copy the output of this command.***
+Configured Capacity: 831719669760 (774.60 GB)
+Present Capacity: 576088977408 (536.52 GB)
+DFS Remaining: 576088850432 (536.52 GB)
+DFS Used: 126976 (124 KB)
+DFS Used%: 0.00%
+Replicated Blocks:
+        Under replicated blocks: 0
+        Blocks with corrupt replicas: 0
+        Missing blocks: 0
+        Missing blocks (with replication factor 1): 0
+        Low redundancy blocks with highest priority to recover: 0
+        Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+        Low redundancy block groups: 0
+        Block groups with corrupt internal blocks: 0
+        Missing block groups: 0
+        Low redundancy blocks with highest priority to recover: 0
+        Pending deletion blocks: 0
 -------------------------------------------------
 Live datanodes (4):
 
@@ -103,7 +121,7 @@ There are 5 live datanodes in this cluster.
 
 
 4. ***(Q4) How many replicas are stored on the namenode? How many replicas are stored in the datanodes?***
-
+There are 0 replicas stored on the namenode. There are 0 replicas stroed in the datanodes. 
 
 
 5. ***(Q5) How many replicas are stored on the datanode uploading the file? How many replicas are stored across other datanodes?***
