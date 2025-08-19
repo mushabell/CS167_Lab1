@@ -2,10 +2,10 @@
 
 ## Student information
 
-* Full name:
-* E-mail:
-* UCR NetID:
-* Student ID:
+* Full name: Amshu Bellur
+* E-mail: abell062@ucr.edu
+* UCR NetID: abell062
+* Student ID: 862412968
 
 ## Answers
 
