@@ -10,7 +10,7 @@
 ## Answers
 
 1. ***(Q1) Compare `bytesRead` and `length`, are they equal? Use one sentance to explain why.***
-
+They are not equal because bytesRead can be larger than length as the position is checked only after the line is read meaning the program can read more than just the lines in the range.
 
 
 2. ***(Q2) Copy the output of this command.***\
@@ -33,7 +33,7 @@ Erasure Coded Block Groups:
         Low redundancy blocks with highest priority to recover: 0
         Pending deletion blocks: 0
 -------------------------------------------------
-Live datanodes (4):
+Live datanodes (5):
 
 Name: 169.235.28.134:9866 (class-134.cs.ucr.edu)
 Hostname: class-134.cs.ucr.edu
@@ -64,6 +64,25 @@ Non DFS Used: 112053579776 (104.36 GB)
 DFS Remaining: 95859527680 (89.28 GB)
 DFS Used%: 0.00%
 DFS Remaining%: 46.10%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Mon Aug 18 17:00:48 PDT 2025
+Last Block Report: Mon Aug 18 16:04:12 PDT 2025
+Num of Blocks: 0
+
+Name: 169.235.28.136:9866 (class-136.cs.ucr.edu)
+Hostname: class-136.cs.ucr.edu
+Decommission Status : Normal
+Configured Capacity: 207929917440 (193.65 GB)
+DFS Used: 16342241280 (15.22 GB)
+Non DFS Used: 44998516736 (41.91 GB)
+DFS Remaining: 146572382208 (136.51 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 70.49%
 Configured Cache Capacity: 0 (0 B)
 Cache Used: 0 (0 B)
 Cache Remaining: 0 (0 B)
@@ -117,20 +136,20 @@ Num of Blocks: 0
 
 
 3. ***(Q3) How many live datanodes are in this cluster?***\
-There are 5 live datanodes in this cluster.
+There are 5 live datanodes in this cluster. 
 
 
 4. ***(Q4) How many replicas are stored on the namenode? How many replicas are stored in the datanodes?***\
-There are 0 replicas stored on the namenode. There are 0 replicas stroed in the datanodes. 
+There are 0 replicas stored on the namenode. There are 3 replicas stored in the datanodes. 
 
 
 5. ***(Q5) How many replicas are stored on the datanode uploading the file? How many replicas are stored across other datanodes?***\
-There are 2 replicas that are stored on my datanode after uploading the file. There is one replica of the files in the namenode.  
+There are 3 replicas that are stored on my datanode after uploading the file. There is 0 replicas of the files in the namenode. There is 3 on each data node, so that means 15 replicas in total.  
 
 
 
 6. ***(Q6) Compare your results of Q4 and Q5, give one sentence to explain the results you obtained.***\
-In question 4 there were no files uploaded so there was no copies of any files that were cerated. In question 5, each datanode uploaded a file and had a repliaction factor of 3 which created a total of ___ replicas overall with ___ in the namenode and ___ in the datanodes. 
+Both quesion 4 and 5 have the same values because the namenode holds the metadata, not the actual files, which is why the namenode does not have any replicas and each datanode has an average replica factor of 3, making each datanode have 3 replicas. 
 
 
 7. ***(Q7) Include the output of the three cases above in your README file.***
