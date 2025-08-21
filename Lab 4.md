@@ -9,9 +9,11 @@
 
 ## Answers
 
-* (Q1) What do you think the line `job.setJarByClass(Filter.class);` does?
+* (Q1) What do you think the line `job.setJarByClass(Filter.class);` does?\
+  setJarByClass specifies the specific class that we should use for the jar file. This is applied on the Job titled job. 
 
-* (Q2) What is the effect of the line `job.setNumReduceTasks(0);`?
+* (Q2) What is the effect of the line `job.setNumReduceTasks(0);`?\
+This line sets the number of redusers to zero on the job and this means there will no reduce-phase, only a map phase. 
 
 * (Q4) How many lines do you see in the output?
 
