@@ -146,17 +146,17 @@ This line sets the number of redusers to zero on the job and this means there wi
                 Bytes Written=0
 
 * (Q4) How many files are produced in the output?\
-There are 2 output files that are produced. 
+There are 3 output files that are produced, including the _SUCCESS file. 
 * (Q5) Explain this number based on the input file size and default block size.\
 The default block size is 128MB, and since each of the files for the input are smaller than 128MB there are only 2 files that are produced as the output. 
-* (Q6) How many files are produced in the output directory and how many lines are there in each file?
-
-* (Q7) Explain these numbers based on the number of reducers and number of response codes in the input file.
-
-* (Q8) How many files are produced in the output directory and how many lines are there in each file?
-
-* (Q9) Explain these numbers based on the number of reducers and number of response codes in the input file.
-
+* (Q6) How many files are produced in the output directory and how many lines are there in each file?\
+There are three files that are produced including the _SUCCESS file. There should be 2 lines in each file (not _SUCCESS file) totaling 4 lines. 
+* (Q7) Explain these numbers based on the number of reducers and number of response codes in the input file.\
+There are 2 reducers which each create their own file making the 2 files  and a success marker file. The number of response codes is 4 because we set the value for the reduce input groups to 4. 
+* (Q8) How many files are produced in the output directory and how many lines are there in each file?\
+There are 3 output files that are created. There are 7 lines wirrten in total with one file having 3 lines and the other having 4 lines.
+* (Q9) Explain these numbers based on the number of reducers and number of response codes in the input file.\
+There are 2 reducers which each create their own file making the 2 files a d a success marker file. The number of response codes is 7 because we set the value for the reduce input groups to 7. 
 * (Q10) How many files are produced in the output directory and how many lines are there in each file?
 
 * (Q11) Explain these numbers based on the number of reducers and number of response codes in the input file.
