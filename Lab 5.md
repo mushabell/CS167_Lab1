@@ -18,8 +18,8 @@ Executor added: app-20250828195352-0000/1 on worker-20250828103746-169.235.28.13
 The spark master did not print anything in the standard output. 
 * (Q4) What is the Spark master printed on the standard output on the terminal?\
 The spark master printed: Using Spark master 'spark://class-133:7077'
-* (Q5) For the previous command that prints the number of matching lines, how many tasks were created, and how much time it took to process each task.
-  
+* (Q5) For the previous command that prints the number of matching lines, how many tasks were created, and how much time it took to process each task.\
+  There was a total of 4 tasks that were created. There were 2 in stage 0 and 2 in stage 1. In stage 0, the tasks took 1477 ms and 1393 ms. In stage 1, the tasks took 116 ms and 1122 ms.
 * (Q6) For the previous command that counts the lines and prints the output, how many tasks in total were generated?
 
 * (Q7) Compare this number to the one you got earlier.
