@@ -20,14 +20,14 @@ The spark master did not print anything in the standard output.
 The spark master printed: Using Spark master 'spark://class-133:7077'
 * (Q5) For the previous command that prints the number of matching lines, how many tasks were created, and how much time it took to process each task.\
   There was a total of 4 tasks that were created. There were 2 in stage 0 and 2 in stage 1. In stage 0, the tasks took 1477 ms and 1393 ms. In stage 1, the tasks took 116 ms and 1122 ms.
-* (Q6) For the previous command that counts the lines and prints the output, how many tasks in total were generated?
+* (Q6) For the previous command that counts the lines and prints the output, how many tasks in total were generated?\
+There were still 4 tasks that were generated with 2 tasks in each stage 0 and 1.
+* (Q7) Compare this number to the one you got earlier.\
+They both have 4 tasks. 
+* (Q8) Explain why we get these numbers.\
+Both of the jobs have RDDs that have 2 partitions. This means that each stage of the job will have two tasks. There are two stages because stage 0 counts all the number of lines in the file while stage 1 counts the number of lines that contain 200.
+* (Q9) What can you do to the current code to ensure that the file is read only once?\
+One thing that we can do is use chache or memory to hold the file so we do not have to read it twice. We can keep the RDD in memory so we do not have to read the file twice. 
+* (Q10) How many stages does your program have, and what are the steps in each stage?\
 
-* (Q7) Compare this number to the one you got earlier.
-
-* (Q8) Explain why we get these numbers.
-
-* (Q9) What can you do to the current code to ensure that the file is read only once?
-
-* (Q10) How many stages does your program have, and what are the steps in each stage? 
-
-* (Q11) Why does your program have two stages?
+* (Q11) Why does your program have two stages?\
