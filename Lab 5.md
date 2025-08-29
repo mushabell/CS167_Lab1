@@ -9,10 +9,11 @@
 
 ## Answers
 
-* (Q1) Do you think it will use your local cluster? Why or why not?/
-
-* (Q2) Does the application use the cluster that you started? How did you find out?/
-
+* (Q1) Do you think it will use your local cluster? Why or why not?\
+I think it will use the local cluster because when looking at the output, the executor runs on class 134 which is my local class.
+* (Q2) Does the application use the cluster that you started? How did you find out?\
+Yes, the application uses the cluster that I started and I know this because it connected to the spark master when the output had "Connecting to master spark://class-133:7077..." and used worker nodes when the output had "Executor added: app-20250828195352-0000/0 on worker-20250828194306-169.235.28.134-39665
+Executor added: app-20250828195352-0000/1 on worker-20250828103746-169.235.28.137-37201".
 * (Q3) What is the Spark master printed on the standard output on IntelliJ IDEA?
 
 * (Q4) What is the Spark master printed on the standard output on the terminal?
