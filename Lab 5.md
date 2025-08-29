@@ -29,5 +29,6 @@ Both of the jobs have RDDs that have 2 partitions. This means that each stage of
 * (Q9) What can you do to the current code to ensure that the file is read only once?\
 One thing that we can do is use chache or memory to hold the file so we do not have to read it twice. We can keep the RDD in memory so we do not have to read the file twice. 
 * (Q10) How many stages does your program have, and what are the steps in each stage?\
-
+There are two stages in the program. The stagen 0 has steps: textfile, map, and countByKey. The stange 2 has step: countByKey.
 * (Q11) Why does your program have two stages?\
+  There are two stages beacuse one stage is required to read the data file while another stage is needed to group the pairs by key and count as this requires a shuffle. 
